@@ -1,0 +1,152 @@
+:root{
+  --main-color:#3D618A;
+  --text-color:#17171B;
+}
+
+body
+{
+  margin: 0;
+}
+
+header{
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  position: fixed;
+  justify-content: space-between;
+  filter: drop-shadow(0 -10px 12px black);
+  padding: 10px 60px;
+  width: 100%;
+  height: auto;
+  font-family: 'Klee One', cursive;
+  z-index: 500;
+}
+
+@media screen and (max-width: 1240px){
+  header{
+    background: #fff;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    filter: drop-shadow(0 -10px 12px black);
+    padding: 10px 60px;
+    width: 100%;
+    height: auto;
+    /* border: none; */
+    font-family: 'Klee One', cursive;
+    z-index: 4;
+  }
+}
+
+.profile h1{
+  margin: 0;
+  font-weight: normal;
+}
+
+.profile p{
+  margin: 0;
+  padding: 0;
+}
+
+.name{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-menu p{
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+}
+
+.menu{
+  display: flex;
+  font-size: 25px;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.drop-menu{
+  font-size: 25px;
+  list-style: none;
+}
+
+.menu-works{
+  margin-left: 20px;
+}
+
+/* 元のサイズのときのを消す */
+@media screen and (max-width: 1240px){
+  .header-menu{
+      display: none;
+  }
+}
+
+.responsive-menu{
+  display: none;
+}
+
+@media screen and (max-width: 1240px){
+  .responsive-menu{
+      display: block;
+  }
+}
+
+.hamburger {
+  position: fixed;
+  width: 25px;
+  height: 30px;
+  top: 15px;
+  right: 20px;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 25px;
+}
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+#toggle {
+  display: none;
+}
+#toggle:checked + .hamburger .top {
+  background-color: white;
+  transform: rotate(-45deg);
+  margin-top: 16px;
+}
+#toggle:checked + .hamburger .meat {
+  background-color: white;
+  transform: rotate(45deg);
+  margin-top: -3px;
+}
+#toggle:checked + .hamburger .bottom {
+  background-color: white;
+  transform: scale(0);
+}
+#toggle:checked + .hamburger + .nav {
+  right: 0;
+}
+.nav {
+  position: fixed;
+  width: 60%;
+  height: 100vh;
+  background-color: var(--main-color);
+  top: 0;
+  right: -60%;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding-top: 60px;
+  z-index: 5;
+}
+.nav .nav-wrapper {
+  position: relative;
+  overflow-y: auto;
+  height: 100%;
+}

@@ -1,0 +1,119 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main{
+  padding: 120px 10px 0 10px;
+}
+
+.contents-inner{
+  padding-top: 120px;
+  margin-top: -120px;
+}
+
+.sub{
+  text-align: left;
+  padding: 0;
+  margin-left: 20px;
+}
+.subp{
+  text-align: left;
+  text-indent: 1em;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.works h2{
+  text-align: left;
+  font-weight: normal;
+  margin: 60px 0 10px 20px;
+}
+
+.works h3{
+  /* font-weight: normal; */
+  margin: 20px 0 10px 40px;
+}
+
+.works p{
+  text-align: left;
+  text-indent: 1em;
+  padding: 0;
+  margin: 0 50px;
+}
+
+h2{
+  padding: 0;
+  margin-top: 50px;
+}
+
+.one-photo{
+  display: flex;
+  text-align: center;
+}
+
+.one-photo li{
+  width: 100vw;
+}
+
+.one-photo img{
+  width: 50%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.size-25 img{
+  width: 25%;
+  height: auto;
+}
+
+.size-50 img{
+  width: 50%;
+  height: auto;
+}
+
+.size-75{
+  width: 75%;
+  height: auto;
+}
+
+/* テンプレ */
+
+/* 
+<section class="works">
+  <h2>〇〇〇</h2>
+  <h3>臨書『〇〇〇』</h3>
+  <ul class="slider">
+    <li><img src="img/img_01.jpg" alt=""></li>
+    <li><img src="img/img_02.jpg" alt=""></li>
+    <li><img src="img/img_03.jpg" alt=""></li>
+    <li><img src="img/img_04.jpg" alt=""></li>
+    <li><img src="img/img_05.jpg" alt=""></li>
+    <li><img src="img/img_06.jpg" alt=""></li>
+  </ul>
+  <p>
+    〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇
+    〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇
+  </p>
+  <h3>創作『〇〇〇』</h3>
+  <ul class="slider">
+    <li><img src="img/img_01.jpg" alt=""></li>
+    <li><img src="img/img_02.jpg" alt=""></li>
+    <li><img src="img/img_03.jpg" alt=""></li>
+    <li><img src="img/img_04.jpg" alt=""></li>
+    <li><img src="img/img_05.jpg" alt=""></li>
+    <li><img src="img/img_06.jpg" alt=""></li>
+  </ul>
+  <p>
+    〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇
+    〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇
+  </p>
+</section> 
+*/
