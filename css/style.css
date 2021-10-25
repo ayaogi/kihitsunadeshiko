@@ -49,6 +49,13 @@ a{
   margin: 0 50px;
 }
 
+.greeting p{
+  text-align: left;
+  text-indent: 1em;
+  padding: 0;
+  margin: 0 50px;
+}
+
 h2{
   padding: 0;
   margin-top: 50px;
@@ -82,6 +89,28 @@ h2{
 .size-75{
   width: 75%;
   height: auto;
+}
+
+footer{
+  background-color: #b0b0ff;
+}
+
+.footer-p{
+  padding: 30px 0;
+  margin-top: 25px;
+}
+
+
+.footer-p p{
+  color: #555;
+  padding: 0;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1240px){
+  .pc{
+    display: none;
+  }
 }
 
 /* テンプレ */
