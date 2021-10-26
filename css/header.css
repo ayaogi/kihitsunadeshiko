@@ -23,7 +23,7 @@ header{
   z-index: 500;
 }
 
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 560px){
   header{
     background: #4b0082;
     display: flex;
@@ -87,7 +87,7 @@ header{
 }
 
 /* 元のサイズのときのを消す */
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 560px){
   .header-menu{
       display: none;
   }
@@ -97,7 +97,7 @@ header{
   display: none;
 }
 
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 560px){
   .responsive-menu{
       display: block;
   }

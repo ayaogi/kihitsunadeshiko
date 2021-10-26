@@ -107,7 +107,7 @@ footer{
   margin: 10px;
 }
 
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 560px){
   .pc{
     display: none;
   }
